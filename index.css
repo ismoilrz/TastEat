@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.CormorantInfant {
+    font-family: 'Cormorant Infant';
+}
+
+.JosefinSans {
+    font-family: 'Josefin Sans';
+}

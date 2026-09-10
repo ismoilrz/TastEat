@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+    <title>Document</title>
+</head>
+<body">
+    <div>
+        <header class="bg-[#292e36]">
+            <div class="container flex items-center justify-between py-[50px] border-b border-[#5C6168]">
+                <button data-i18n="call" class="w-[290px] h-[70px] JosefinSans bg-[#E1B168] text-[22px] text-[#292E36] duration-200 hover:text-[#e1b168] hover:bg-transparent border-2 border-[#e1b168] hover:border-[#e1b168]">Call - 123 456 789</button>
+                <a href="#"><img src="./assets/IMAGE.png" alt=""></a>
+                <button data-i18n="reservation" class="w-[290px] h-[70px] JosefinSans bg-[#E1B168] text-[22px] text-[#292E36] duration-200 hover:text-[#e1b168] hover:bg-transparent border-2 border-[#e1b168] hover:border-[#e1b168]">Reservation</button>
+            </div>
+            <div class="container flex justify-between py-6">
+                <nav class="flex gap-[60px] text-[20px] text-white JosefinSans">
+                    <a data-i18n="home" href="#">Home</a>
+                    <a data-i18n="about" href="#">About Us</a>
+                    <a data-i18n="menu" href="#">Our Menu</a>
+                    <a data-i18n="pages" href="#">Pages</a>
+                    <a data-i18n="blog" href="#">Blog</a>
+                    <a data-i18n="contact" href="#">Contact Us</a>
+                </nav>
+                <div class="flex items-center gap-[20px]">
+                    <div class="relative">
+                <button id="lang-btn" class="px-4 py-2 text-white bg-[#373d47] border border-[#5C6168] rounded JosefinSans text-[18px]">
+                    <span id="current-lang" class="font-bold text-[#e1b168]">EN</span>
+                </button>
+
+                <div id="lang-menu" class="hidden absolute right-0 mt-2 w-28 bg-[#292e36] border border-[#5C6168] rounded shadow-xl z-50 overflow-hidden JosefinSans">
+                    <button onclick="setLanguage('EN')" class="w-full text-left px-4 py-2 text-white hover:bg-[#e1b168] hover:text-[#292e36]">English</button>
+                    <button onclick="setLanguage('UZ')" class="w-full text-left px-4 py-2 text-white hover:bg-[#e1b168] hover:text-[#292e36]">O'zbek</button>
+                    <button onclick="setLanguage('RU')" class="w-full text-left px-4 py-2 text-white hover:bg-[#e1b168] hover:text-[#292e36]">Русский</button>
+                </div>
+            </div>
+                    <a href="#"><img src="./assets/insta.svg" alt=""></a>
+                    <a href="#"><img src="./assets/facebook.svg" alt=""></a>
+                    <a href="#"><img src="./assets/twitter.svg" alt=""></a>
+                    <a href="#"><img src="./assets/pinterest.svg" alt=""></a>
+                </div>
+            </div>
+        </header>
+
+        <section class="bg-[#292e36] flex flex-col">
+            <div class="flex justify-between pt-10 container">
+                <div class="w-1/2 flex flex-col justify-center gap-7">
+                    <h1 data-i18n="welcome" class="text-[100px] leading-[110%] CormorantInfant text-white">Welcome to Restaurant</h1>
+                    <p data-i18n="welcomedec" class="text-[20px] text-white JosefinSans leading-[30px] max-w-[85%]">
+                        The people, food and the prime locations make the perfect place good 
+                        friends & family to come together and have great time.
+                    </p>
+                    <button class="w-[226px] h-[70px] bg-[#e1b168] text-[22px] text-[#292E36] JosefinSans border-2 border-transparent duration-200 hover:bg-transparent hover:border-[#e1b168] hover:text-[#e1b168]">View Menu</button>
+                </div>
+                <div class="border-t-[30px] border-x-[30px] border-[#41464d] rounded-t-[325px]">
+                    <img src="./assets/sect1Main.png" alt="">
+                </div>
+            </div>
+
+            <div class="bg-[#FFF8F5]">
+                <div class="container flex justify-between gap-3 pt-[100px] pb-[60px]">
+                    <div class="flex items-center gap-5">
+                        <img class="w-[83px] h-[83px]" src="./assets/LocateUs.png" alt="">
+                        <div>
+                            <h5 data-i18n="locateUs" class="text-[30px] CormorantInfant text-[#292E36]">Locate Us</h5>
+                            <p data-i18n="locateUsdec" class="text-[20px] text-[#555555] JosefinSans">Riverside 25, San Diego, California</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-5">
+                        <img class="w-[83px] h-[83px]" src="./assets/OpenHours.png" alt="">
+                        <div>
+                            <h5 data-i18n="openhours" class="text-[30px] CormorantInfant text-[#292E36]">Open Hours</h5>
+                            <p data-i18n="openhoursdec" class="text-[20px] text-[#555555] JosefinSans">Mon To Fri 9:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-5">
+                        <img class="w-[83px] h-[83px]" src="./assets/Reservation.png" alt="">
+                        <div>
+                            <h5 data-i18n="reservation" class="text-[30px] CormorantInfant text-[#292E36]">Reservation</h5>
+                            <p class="text-[20px] text-[#555555] JosefinSans">restaurantate@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-[#fff8f5] w-full pt-[85px] pb-[125px]">
+                <div class="w-full flex gap-11 justify-between container">
+                    <div class="w-[100%]">
+                        <img class="w-full h-[530px]" src="./assets/sect1Mainend.jpg" alt="">
+                    </div>
+
+                    <div class="w-[68%] flex flex-col gap-5">
+                        <div class="flex flex-col gap-4">
+                            <h3 data-i18n="deliciousStory" class="text-[40px] text-[#292E36] CormorantInfant">The Delicious Story</h3>
+                            <p data-i18n="welcomedec" class="text-[20px] leading-[30px] text-[#555555] JosefinSans">The people, food and the prime locations make the perfect place for the friends & family to come together and have great time.</p>
+                        </div>
+
+                        <div class="w-full flex justify-between gap-5">
+                            <div>
+                                <h3 class="text-[40px] text-[#292E36] CormorantInfant">2018</h3>
+                                <p data-i18n="palanFor" class="text-[20px] text-[#555555] mt-4 JosefinSans">Plan for this restaurant to deliver healthy food.</p>
+                            </div>
+                            <div>
+                                <h3 class="text-[40px] text-[#292E36] CormorantInfant">2022</h3>
+                                <p data-i18n="happly" class="text-[20px] text-[#555555] mt-4 JosefinSans">Happily in the fourth year by fulfill the motto.</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="text-[20px] text-[#555555] JosefinSans">JOSEFINE</span>
+                            <img class="mt-5" src="./assets/tast.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container py-[140px]">
+    <span class="text-[15px] JosefinSans border-y border-[#e1b168] text-[#292E36] py-[5px]">MENU</span>
+    
+    <div class="flex justify-between gap-[50px] items-start mt-6">
+        
+        <div class="w-[35%] sticky top-4">
+            <h3 class="text-[40px] py-4 CormorantInfant text-[#292E36]">Try Our Special Dishes</h3>
+            <p class="text-[20px] pb-[30px] JosefinSans text-[#555555]">
+                Every time you perfectly dine with us, it should happy for great inspired food in an environment designed with individual touches unique to the local area.
+            </p>
+            <img src="./assets/menupick.jpg" alt="Menu" class="w-[400px] h-[550px] object-cover">
+            <button class="w-[250px] h-[70px] text-[22px] mt-[60px] JosefinSans text-[#292E36] bg-[#e1b168] border-2 border-transparent duration-200 hover:text-[#e1b168] hover:border-[#e1b168] hover:bg-transparent cursor-pointer">
+                See all dishes
+            </button>
+        </div>
+
+        <div class="w-[60%]">
+            <h5 class="text-[36px] CormorantInfant text-[#292E36]">Starters</h5>
+            <div id="starters" class="flex flex-col gap-[50px] mt-10 mb-16"></div>
+            
+            <h5 class="text-[36px] CormorantInfant text-[#292E36]">Main Dish</h5>
+            <div id="mainDish" class="flex flex-col gap-[50px] mt-10 mb-16"></div>
+            
+            <h5 class="text-[36px] CormorantInfant text-[#292E36]">Dessert</h5>
+            <div id="dessert" class="flex flex-col gap-[50px] mt-10"></div>
+        </div>
+
+    </div>
+</section>
+    </div>
+
+    <script src="./utils/global.js"></script>
+</body>
+</html>

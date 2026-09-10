@@ -1,0 +1,68 @@
+{
+  "starters": [
+    {
+      "id": 1,
+      "img": "./assets/starters1.png",
+      "price": "$40",
+      "title": {
+        "EN": "Raw Scallops from Erquy",
+        "UZ": "Erkiydan xom taroqchalar",
+        "RU": "Свежие гребешки из Эрки"
+      },
+      "des": {
+        "EN": "Shuck the scallop to that used for oysters",
+        "UZ": "Ustritsalar uchun ishlatiladigan taroqchani tozalang",
+        "RU": "Очистите гребешок, как для устриц"
+      }
+    },
+    {
+      "id": 2,
+      "img": "./assets/starters2.png",
+      "price": "$20",
+      "title": {
+        "EN": "Spring Roll",
+        "UZ": "Spring Roll",
+        "RU": "Спринг-ролл"
+      },
+      "des": {
+        "EN": "Add oil to a hot pan spring onion whites",
+        "UZ": "Qizib turgan tavaga yog' va ko'k piyoz soling",
+        "RU": "Добавьте масло на горячую сковороду с белым луком"
+      }
+    }
+  ],
+  "mainDish": [
+    {
+      "id": 1,
+      "img": "./assets/dish1.png",
+      "price": "$40",
+      "title": {
+        "EN": "Grilled Salmon with Dill Sauce",
+        "UZ": "Shivit sousi bilan qovurilgan losos",
+        "RU": "Лосось на гриле с укропным соусом"
+      },
+      "des": {
+        "EN": "Brown sugar, salmon fillet, Dijon mustard",
+        "UZ": "Jigar rang shakar, losos bifshteksi, Dijon gorchitsasi",
+        "RU": "Коричневый сахар, филе лосося, дижонская горчица"
+      }
+    }
+  ],
+  "dessert": [
+    {
+      "id": 1,
+      "img": "./assets/dess1.png",
+      "price": "$15",
+      "title": {
+        "EN": "Apple Pie with Cream",
+        "UZ": "Krem bilan olma pirogi",
+        "RU": "Яблочный пирог со сливками"
+      },
+      "des": {
+        "EN": "Whipping cream, egg white, cinnamon",
+        "UZ": "Ko'pirtirilgan krem, tuxum oqi, dolchin",
+        "RU": "Взбитые сливки, яичный белок, корица"
+      }
+    }
+  ]
+}
