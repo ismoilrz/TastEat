@@ -10,6 +10,8 @@
     "contact": "Contact Us",
     "welcome": "Welcome to Restaurant",
     "welcomedec": "The people, food and the prime locations make the perfect place good friends & family to come together and have great time.",
+    "viewMenu": "View Menu",
+    "menu1Title": "Try Our Special Dishes",
     "locateUs": "Locate Us",
     "locateUsdec": "Riverside 25, San Diego, California",
     "openhours": "Open Hours",
@@ -19,7 +21,8 @@
     "happly": "Happily in the fourth year by fulfill the motto.",
     "startersTitle": "Starters",
     "mainDishTitle": "Main Dish",
-    "dessertTitle": "Dessert"
+    "dessertTitle": "Dessert",
+    "menu1": "MENU"
   },
   "UZ": {
     "call": "Aloqa - 123 456 789",
@@ -32,6 +35,8 @@
     "contact": "Bog'lanish",
     "welcome": "Restoranga xush kelibsiz",
     "welcomedec": "Odamlar, taomlar va ajoyib joylar do'stlar va oila a'zolari bilan birga vaqt o'tkazish uchun eng zo'r joydir.",
+    "viewMenu": "Menyuni ko'rish",
+    "menu1Title": "Bizning maxsus taomlarimizni sinab ko'ring",
     "locateUs": "Bizni toping",
     "locateUsdec": "Riverside 25, San-Diego, Kaliforniya",
     "openhours": "Ish vaqti",
@@ -41,7 +46,8 @@
     "happly": "To'rtinchi yilda shiorni bajarish orqali baxtli bo'ling.",
     "startersTitle": "Boshlang'ich taomlar",
     "mainDishTitle": "Asosiy taomlar",
-    "dessertTitle": "Dessertlar"
+    "dessertTitle": "Dessertlar",
+    "menu1": "MENYU"
   },
   "RU": {
     "call": "Звонок - 123 456 789",
@@ -54,6 +60,8 @@
     "contact": "Контакты",
     "welcome": "Добро пожаловать в ресторан!",
     "welcomedec": "Люди, еда и отличное расположение делают это место идеальным для того, чтобы собраться с друзьями и семьей.",
+    "viewMenu": "Просмотреть меню",
+    "menu1Title": "Попробуйте наши фирменные блюда",
     "locateUs": "Найдите нас",
     "locateUsdec": "25 Риверсайд, Сан-Диего, Калифорния",
     "openhours": "Часы работы",
@@ -63,6 +71,7 @@
     "happly": "С радостью на четвертом году мы исполнили свой девиз.",
     "startersTitle": "Закуски",
     "mainDishTitle": "Основные блюда",
-    "dessertTitle": "Десерты"
+    "dessertTitle": "Десерты",
+    "menu1": "МЕНЮ"
   }
 }

@@ -15,7 +15,7 @@
         "RU": "Очистите гребешок, как для устриц"
       }
     },
-    {
+   { 
       "id": 2,
       "img": "./assets/starters2.png",
       "price": "$20",
@@ -29,8 +29,39 @@
         "UZ": "Qizib turgan tavaga yog' va ko'k piyoz soling",
         "RU": "Добавьте масло на горячую сковороду с белым луком"
       }
+    },
+   { 
+      "id": 3,
+      "img": "./assets/starters3.png",
+      "price": "$25",
+      "title": {
+        "EN": "French Onion Soup",
+        "UZ": "Fransuz piyoz sho'rva",
+        "RU": "Французский луковый суп"
+      },
+      "des": {
+        "EN": "Wheat flour, apple cider vinegar, bread",
+        "UZ": "Bug'doy uni, olma sirkasi, non",
+        "RU": "Пшеничная мука, яблочный уксус, хлеб"
+      }
+    },
+   { 
+      "id": 4,
+      "img": "./assets/starters4.png",
+      "price": "$30",
+      "title": {
+        "EN": "Tomato Bruschetta",
+        "UZ": "Pomidorli Brusketta",
+        "RU": "Брускетта с помидорами"
+      },
+      "des": {
+        "EN": "Bread, olive oil, garlic, black pepper",
+        "UZ": "Non, zaytun moyi, sarimsoq, qora murch",
+        "RU": "Хлеб, оливковое масло, чеснок, черный перец"
+      }
     }
   ],
+
   "mainDish": [
     {
       "id": 1,
@@ -45,6 +76,51 @@
         "EN": "Brown sugar, salmon fillet, Dijon mustard",
         "UZ": "Jigar rang shakar, losos bifshteksi, Dijon gorchitsasi",
         "RU": "Коричневый сахар, филе лосося, дижонская горчица"
+      }
+    },
+    {
+      "id": 2,
+      "img": "./assets/dish2.png",
+      "price": "$20",
+      "title": {
+        "EN": "Roast Beef with Vegetable",
+        "UZ": "Sabzavotli qovurilgan mol go'shti",
+        "RU": "Ростбиф с овощами"
+      },
+      "des": {
+        "EN": "Green beans, rib eye, olive oil, beef",
+        "UZ": "Yashil loviya, qovurg'a ko'zi, zaytun moyi, mol go'shti",
+        "RU": "Зеленая фасоль, рибай, оливковое масло, говядина"
+      }
+    },
+    {
+      "id": 3,
+      "img": "./assets/dish3.png",
+      "price": "$25",
+      "title": {
+        "EN": "Marrkesh Vegetetarian Curruy",
+        "UZ": "Marrkesh Vegetetarian Curruy",
+        "RU": "Marrkesh Vegetetarian Curruy"
+      },
+      "des": {
+        "EN": "Sweet potato, eggplant, garbanzo bean",
+        "UZ": "Shirin kartoshka, baqlajon, garbanzo loviyasi",
+        "RU": "Сладкий картофель, баклажаны, нут"
+      }
+    },
+    {
+      "id": 4,
+      "img": "./assets/dish4.png",
+      "price": "$35",
+      "title": {
+        "EN": "Spicy Vegan Potato Curry",
+        "UZ": "Achchiq Vegan Kartoshka Karri",
+        "RU": "Острое веганское картофельное карри"
+      },
+      "des": {
+        "EN": "Coconut milk, beans, potatoes, curry powder",
+        "UZ": "Hindiston yong'og'i suti, loviya, kartoshka, karri kukuni",
+        "RU": "Кокосовое молоко, фасоль, картофель, порошок карри."
       }
     }
   ],
@@ -62,6 +138,21 @@
         "EN": "Whipping cream, egg white, cinnamon",
         "UZ": "Ko'pirtirilgan krem, tuxum oqi, dolchin",
         "RU": "Взбитые сливки, яичный белок, корица"
+      }
+    },
+    {
+      "id": 2,
+      "img": "./assets/dess2.png",
+      "price": "$15",
+      "title": {
+        "EN": "Lemon Meringue Pie",
+        "UZ": "Limonli beze pirogi",
+        "RU": "Лимонный меренговый пирог"
+      },
+      "des": {
+        "EN": "Frozen pie crust, meringue, lemon",
+        "UZ": "Muzlatilgan pirog qobig'i, beze, limon",
+        "RU": "Замороженное тесто для пирога, безе, лимон"
       }
     }
   ]

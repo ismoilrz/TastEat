@@ -1,9 +1,31 @@
 @import "tailwindcss";
 
+body {
+    overflow-x: hidden;
+}
+
 .container {
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #343942;
+    border-left: 1px solid #4f535b;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e1b168;
+    border-radius: 10px;
+}
+
+::selection {
+    background-color: #e1b168;
 }
 
 .CormorantInfant {
@@ -12,4 +34,54 @@
 
 .JosefinSans {
     font-family: 'Josefin Sans';
+}
+
+.swiper {
+    width: 100%;
+    height: 500px !important;
+}
+
+.swiper-wrapper {
+    height: 400px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #343942;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-bullet{
+    width: 20px;
+    height: 20px;
+    background-color: #fff !important;
+}
+
+body {
+    background-image: url("./assets/wrapback.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.offer1 {
+    background-image: url("./assets/offers1.jpg");
+}
+
+.offer2 {
+    background-image: url("./assets/offers2.jpg");
 }
