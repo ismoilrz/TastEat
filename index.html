@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/IMAGE.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
@@ -18,14 +19,14 @@
     <div class="">
         <header class="bg-[#292e36]">
             <div class="container flex items-center justify-between py-[50px] border-b border-[#5C6168]">
-                <button data-i18n="call" class="w-[290px] h-[70px] JosefinSans bg-[#E1B168] text-[22px] text-[#292E36] duration-200 hover:text-[#e1b168] hover:bg-transparent border-2 border-[#e1b168] hover:border-[#e1b168]">Call - 123 456 789</button>
+                <a href="#"><button data-i18n="call" class="w-[290px] h-[70px] JosefinSans bg-[#E1B168] text-[22px] text-[#292E36] duration-200 hover:text-[#e1b168] hover:bg-transparent border-2 border-[#e1b168] hover:border-[#e1b168]">Call - 123 456 789</button></a>
                 <a href="#"><img src="./assets/IMAGE.png" alt=""></a>
-                <button data-i18n="reservation" class="w-[290px] h-[70px] JosefinSans bg-[#E1B168] text-[22px] text-[#292E36] duration-200 hover:text-[#e1b168] hover:bg-transparent border-2 border-[#e1b168] hover:border-[#e1b168]">Reservation</button>
+                <a href="#"><button data-i18n="reservation" class="w-[290px] h-[70px] JosefinSans bg-[#E1B168] text-[22px] text-[#292E36] duration-200 hover:text-[#e1b168] hover:bg-transparent border-2 border-[#e1b168] hover:border-[#e1b168]">Reservation</button></a>
             </div>
             <div class="container flex justify-between py-6">
                 <nav class="flex gap-[60px] text-[20px] text-white JosefinSans">
                     <a data-i18n="home" href="#">Home</a>
-                    <a data-i18n="about" href="#">About Us</a>
+                    <a data-i18n="about" href="#about">About Us</a>
                     <a data-i18n="menu" href="#">Our Menu</a>
                     <a data-i18n="pages" href="#">Pages</a>
                     <a data-i18n="blog" href="#">Blog</a>
@@ -59,7 +60,7 @@
                         The people, food and the prime locations make the perfect place good 
                         friends & family to come together and have great time.
                     </p>
-                    <button data-i18n="viewMenu" class="w-[226px] h-[70px] bg-[#e1b168] text-[22px] text-[#292E36] JosefinSans border-2 border-transparent duration-200 hover:bg-transparent hover:border-[#e1b168] hover:text-[#e1b168]">View Menu</button>
+                    <a href="#"><button data-i18n="viewMenu" class="w-[226px] h-[70px] bg-[#e1b168] text-[22px] text-[#292E36] JosefinSans border-2 border-transparent duration-200 hover:bg-transparent hover:border-[#e1b168] hover:text-[#e1b168]">View Menu</button></a>
                 </div>
                 <div class="border-t-[30px] border-x-[30px] border-[#41464ddc] rounded-t-[325px] z-10 relative">
                     <img src="./assets/sect1Main.png" alt="">
@@ -136,23 +137,25 @@
         
         <div class="w-[35%] sticky top-4">
             <h3 data-i18n="menu1Title" class="text-[40px] py-4 CormorantInfant text-[#292E36]">Try Our Special Dishes</h3>
-            <p class="text-[20px] pb-[30px] JosefinSans text-[#555555]">
+            <p data-i18n="menu1des" class="text-[20px] pb-[30px] JosefinSans text-[#555555]">
                 Every time you perfectly dine with us, it should happy for great inspired food in an environment designed with individual touches unique to the local area.
             </p>
             <img src="./assets/menupick.jpg" alt="Menu" class="w-[400px] h-[550px] object-cover">
-            <button class="w-[250px] h-[70px] text-[22px] mt-[60px] JosefinSans text-[#292E36] bg-[#e1b168] border-2 border-transparent duration-200 hover:text-[#e1b168] hover:border-[#e1b168] hover:bg-transparent cursor-pointer">
-                See all dishes
-            </button>
+            <a href="#">
+                <button data-i18n="seeAllDishes" class="w-[250px] h-[70px] text-[22px] mt-[60px] JosefinSans text-[#292E36] bg-[#e1b168] border-2 border-transparent duration-200 hover:text-[#e1b168] hover:border-[#e1b168] hover:bg-transparent cursor-pointer">
+                    See all dishes
+                </button>
+            </a>
         </div>
 
         <div class="w-[60%]">
-            <h5 class="text-[36px] CormorantInfant text-[#292E36]">Starters</h5>
+            <h5 data-i18n="starters" class="text-[36px] CormorantInfant text-[#292E36]">Starters</h5>
             <div id="starters" class="flex flex-col gap-[50px] mt-10 mb-16"></div>
             
-            <h5 class="text-[36px] CormorantInfant text-[#292E36]">Main Dish</h5>
+            <h5 data-i18n="mainDish" class="text-[36px] CormorantInfant text-[#292E36]">Main Dish</h5>
             <div id="mainDish" class="flex flex-col gap-[50px] mt-10 mb-16"></div>
             
-            <h5 class="text-[36px] CormorantInfant text-[#292E36]">Dessert</h5>
+            <h5 data-i18n="dessert" class="text-[36px] CormorantInfant text-[#292E36]">Dessert</h5>
             <div id="dessert" class="flex flex-col gap-[50px] mt-10"></div>
         </div>
 
@@ -164,9 +167,9 @@
         <div class="bg-[#292E36] pt-[140px] pb-[120px] mb-[600px]">
             <div class="container">
                 <div class="flex flex-col gap-4">
-                    <span class="JosefinSans text-white text-[15px] py-1 border-y border-[#E1B168] w-30 flex justify-center items-center">TESTIMONIAL</span>
-                    <h4 class="CormorantInfant text-[56px] text-white">Our clients Say</h4>
-                    <p class="JosefinSans text-[20px] text-white">We love to hear from customers, so please leave a comment or say hello in an email.</p>
+                    <span data-i18n="testimonialBadge" class="JosefinSans text-white text-[15px] py-1 border-y border-[#E1B168] w-30 flex justify-center items-center">TESTIMONIAL</span>
+                    <h4 data-i18n="testimonialTitle" class="CormorantInfant text-[56px] text-white">Our clients Say</h4>
+                    <p data-i18n="testimonialSub" class="JosefinSans text-[20px] text-white">We love to hear from customers, so please leave a comment or say hello in an email.</p>
                 </div>
                 <div class="pt-[60px]">
                     <div class="swiper mySwiper">
@@ -178,10 +181,10 @@
                                     </div>
                                     <div class="flex flex-col items-start">
                                         <h5 class="CormorantInfant text-[30px] text-white">Natasha D</h5>
-                                        <b class="JosefinSans text-[20px] text-[#e1b168]">Newyork</b>
+                                        <b data-i18n="natashaLoc" class="JosefinSans text-[20px] text-[#e1b168]">Newyork</b>
                                     </div>
                                 </div>
-                                <p class="text-start text-[24px] text-white CormorantInfant pt-8">They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy.</p>
+                                <p data-i18n="natashaComment" class="text-start text-[24px] text-white CormorantInfant pt-8">They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy.</p>
                             </div>
                             <div class="swiper-slide">
                                 <div class="w-full flex gap-[30px] items-center border-b border-[#797E89] pb-8">
@@ -190,10 +193,10 @@
                                     </div>
                                     <div class="flex flex-col items-start">
                                         <h5 class="CormorantInfant text-[30px] text-white">Jack Sparrow</h5>
-                                        <b class="JosefinSans text-[20px] text-[#e1b168]">Salt Lake City</b>
+                                        <b data-i18n="jackLoc" class="JosefinSans text-[20px] text-[#e1b168]">Salt Lake City</b>
                                     </div>
                                 </div>
-                                <p class="text-start text-[24px] text-white CormorantInfant pt-8">I have visited this fantastic restaurant on several occasions, food is absolutely outstanding & attention to detail is in league of its own.</p>
+                                <p data-i18n="jackComment" class="text-start text-[24px] text-white CormorantInfant pt-8">I have visited this fantastic restaurant on several occasions, food is absolutely outstanding & attention to detail is in league of its own.</p>
                             </div>
                             <div class="swiper-slide">
                                 <div class="w-full flex gap-[30px] items-center border-b border-[#797E89] pb-8">
@@ -202,10 +205,10 @@
                                     </div>
                                     <div class="flex flex-col items-start">
                                         <h5 class="CormorantInfant text-[30px] text-white">Martin</h5>
-                                        <b class="JosefinSans text-[20px] text-[#e1b168]">San Diego</b>
+                                        <b data-i18n="martinLoc" class="JosefinSans text-[20px] text-[#e1b168]">San Diego</b>
                                     </div>
                                 </div>
-                                <p class="text-start text-[24px] text-white CormorantInfant pt-8">Perfectly known for its fabulous taste and food. Anywhere your hunger is satisfied. They give best fried chicken and burgers those are yummy.</p>
+                                <p data-i18n="martinComment" class="text-start text-[24px] text-white CormorantInfant pt-8">Perfectly known for its fabulous taste and food. Anywhere your hunger is satisfied. They give best fried chicken and burgers those are yummy.</p>
                             </div>
                             <div class="swiper-slide">
                                 <div class="w-full flex gap-[30px] items-center border-b border-[#797E89] pb-8">
@@ -214,10 +217,10 @@
                                     </div>
                                     <div class="flex flex-col items-start">
                                         <h5 class="CormorantInfant text-[30px] text-white">Natasha D</h5>
-                                        <b class="JosefinSans text-[20px] text-[#e1b168]">Newyork</b>
+                                        <b data-i18n="natashaLoc" class="JosefinSans text-[20px] text-[#e1b168]">Newyork</b>
                                     </div>
                                 </div>
-                                <p class="text-start text-[24px] text-white CormorantInfant pt-8">They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy.</p>
+                                <p data-i18n="natashaComment" class="text-start text-[24px] text-white CormorantInfant pt-8">They known for its fabulous taste and food. Anywhere you go your hunger is satisfied. The best chicken & burgers those are yummy.</p>
                             </div>
                             <div class="swiper-slide">
                                 <div class="w-full flex gap-[30px] items-center border-b border-[#797E89] pb-8">
@@ -226,10 +229,10 @@
                                     </div>
                                     <div class="flex flex-col items-start">
                                         <h5 class="CormorantInfant text-[30px] text-white">Jack Sparrow</h5>
-                                        <b class="JosefinSans text-[20px] text-[#e1b168]">Salt Lake City</b>
+                                        <b data-i18n="jackLoc" class="JosefinSans text-[20px] text-[#e1b168]">Salt Lake City</b>
                                     </div>
                                 </div>
-                                <p class="text-start text-[24px] text-white CormorantInfant pt-8">I have visited this fantastic restaurant on several occasions, food is absolutely outstanding & attention to detail is in league of its own.</p>
+                                <p data-i18n="jackComment" class="text-start text-[24px] text-white CormorantInfant pt-8">I have visited this fantastic restaurant on several occasions, food is absolutely outstanding & attention to detail is in league of its own.</p>
                             </div>
                             <div class="swiper-slide">
                                 <div class="w-full flex gap-[30px] items-center border-b border-[#797E89] pb-8">
@@ -238,10 +241,10 @@
                                     </div>
                                     <div class="flex flex-col items-start">
                                         <h5 class="CormorantInfant text-[30px] text-white">Martin</h5>
-                                        <b class="JosefinSans text-[20px] text-[#e1b168]">San Diego</b>
+                                        <b data-i18n="martinLoc" class="JosefinSans text-[20px] text-[#e1b168]">San Diego</b>
                                     </div>
                                 </div>
-                                <p class="text-start text-[24px] text-white CormorantInfant pt-8">Perfectly known for its fabulous taste and food. Anywhere your hunger is satisfied. They give best fried chicken and burgers those are yummy.</p>
+                                <p data-i18n="martinComment" class="text-start text-[24px] text-white CormorantInfant pt-8">Perfectly known for its fabulous taste and food. Anywhere your hunger is satisfied. They give best fried chicken and burgers those are yummy.</p>
                             </div>
                         </div>
                         <div class="swiper-pagination"></div>
@@ -253,18 +256,18 @@
         <div class="bg-white pt-[140px]">
             <div class="container">
                 <div class="flex flex-col items-center">
-                    <span class="border-y border-[#e1b168] text-[15px] JosefinSans text-[#292E36] py-1">OFFERS</span>
-                    <h3 class="CormorantInfant text-[40px] text-[#292E36] py-3">Our Offer Dishes</h3>
-                    <p class="JosefinSans text-[#555] text-[20px]">Our chefs create melt-in-your-mouth dishes that'll satiate even the fussiest eaters now</p>
-                    <p class="JosefinSans text-[#555] text-[20px]">the dishes are in offers use it based on hunger.</p>
+                    <span data-i18n="offersBadge" class="border-y border-[#e1b168] text-[15px] JosefinSans text-[#292E36] py-1">OFFERS</span>
+                    <h3 data-i18n="offersTitle" class="CormorantInfant text-[40px] text-[#292E36] py-3">Our Offer Dishes</h3>
+                    <p data-i18n="offersDes1" class="JosefinSans text-[#555] text-[20px]">Our chefs create melt-in-your-mouth dishes that'll satiate even the fussiest eaters now</p>
+                    <p data-i18n="offersDes2" class="JosefinSans text-[#555] text-[20px]">the dishes are in offers use it based on hunger.</p>
                 </div>
                 <div class="w-full flex justify-between gap-[30px] mt-10">
                     <div class="p-10 offer1 flex items-center justify-between">
                         <div class="flex flex-col gap-2 w-[45%]">
                             <img class="w-40 h-[100px] mb-9" src="./assets/offersPrice1.png" alt="">
-                            <span class="border-y border-[#292E36] JosefinSans text-[15px] text-[#292E36] py-1 w-40 flex justify-center items-center">50% OFFER GOING</span>
-                            <h4 class="text-[40px] text-[#292E36] CormorantInfant">Chicken Burger</h4>
-                            <p class="text-[20px] text-[#555] JosefinSans">Chicken burger with the tasty toppings and leaves.</p>
+                            <span data-i18n="offer50" class="border-y border-[#292E36] JosefinSans text-[15px] text-[#292E36] py-1 w-40 flex justify-center items-center">50% OFFER GOING</span>
+                            <h4 data-i18n="burgerTitle" class="text-[40px] text-[#292E36] CormorantInfant">Chicken Burger</h4>
+                            <p data-i18n="burgerDes" class="text-[20px] text-[#555] JosefinSans">Chicken burger with the tasty toppings and leaves.</p>
                         </div>
                         <div>
                             <img src="./assets/offersMain1.png" alt="">
@@ -275,9 +278,9 @@
                         <div class="p-10 offer2 flex items-center justify-between">
                         <div class="flex flex-col gap-2 w-[45%]">
                             <img class="w-40 h-[100px] mb-9" src="./assets/offersPrice2.png" alt="">
-                            <span class="border-y border-[#292E36] JosefinSans text-[15px] text-[#292E36] py-1 w-40 flex justify-center items-center">50% OFFER GOING</span>
-                            <h4 class="text-[40px] text-[#292E36] CormorantInfant">Chicken Pizza</h4>
-                            <p class="text-[20px] text-[#555] JosefinSans">Pizza with multiple flavor and the toping are mixed.</p>
+                            <span data-i18n="offer50" class="border-y border-[#292E36] JosefinSans text-[15px] text-[#292E36] py-1 w-40 flex justify-center items-center">50% OFFER GOING</span>
+                            <h4 data-i18n="pizzaTitle" class="text-[40px] text-[#292E36] CormorantInfant">Chicken Pizza</h4>
+                            <p data-i18n="pizzaDes" class="text-[20px] text-[#555] JosefinSans">Pizza with multiple flavor and the toping are mixed.</p>
                         </div>
                         <div>
                             <img src="./assets/offersMain2.png" alt="">
@@ -294,41 +297,160 @@
         <section class="bg-white">
             <div class="container pt-[120px] flex flex-col items-center">
                 <div class="flex flex-col items-center">
-                    <span class="text-[15px] JosefinSans border-y border-[#e1b168] text-[#292E36] py-[5px] w-14 flex items-center justify-center">MENU</span>
-                    <h4 class="text-[40px] text-[#292E36] CormorantInfant py-3">Popular Dishes</h4>
-                    <p class="text-[20px] text-[#555] JosefinSans">There is a game between the waiters in restaurant to see who serves the food to</p>
-                    <p class="text-[20px] text-[#555] JosefinSans">each table fastest. That led to attempting the Guinness Record.</p>
+                    <span data-i18n="popularMenuBadge" class="text-[15px] JosefinSans border-y border-[#e1b168] text-[#292E36] py-[5px] w-14 flex items-center justify-center">MENU</span>
+                    <h4 data-i18n="popularTitle" class="text-[40px] text-[#292E36] CormorantInfant py-3">Popular Dishes</h4>
+                    <p data-i18n="popularDes1" class="text-[20px] text-[#555] JosefinSans">There is a game between the waiters in restaurant to see who serves the food to</p>
+                    <p data-i18n="popularDes2" class="text-[20px] text-[#555] JosefinSans">each table fastest. That led to attempting the Guinness Record.</p>
                 </div>
 
                 <div id="popularDishes" class="flex justify-between gap-[30px] mt-12"></div>
-                <button class="w-[250px] h-[70px] mt-[60px] border-2 border-[#E1B168] text-[#E1B168] mb-[140px] text-[22px] JosefinSans duration-200 hover:bg-[#e1b168] hover:text-[#292E36]">See all dishes</button>
+                <button data-i18n="seeAllDishes" class="w-[250px] h-[70px] mt-[60px] border-2 border-[#E1B168] text-[#E1B168] mb-[140px] text-[22px] JosefinSans duration-200 hover:bg-[#e1b168] hover:text-[#292E36]">See all dishes</button>
             </div>
         </section>
 
         <section class="bg-[#292E36] py-[140px]">
             <div class="container flex">
                 <div>
-                    <span class="py-1 border-y border-[#E1B168] text-[#fff] JosefinSans">WHAT WE OFFER</span>
-                    <h4 class="text-[40px] gap-3 text-[#fff] CormorantInfant">Our Great Services</h4>
-                    <p class="text-[20px] JosefinSans text-[#fff] max-w-[75%]">The atmosphere set the stage. It’s about more than just a dining room away from your home. food takes the spotlight as guests.</p>
+                    <span data-i18n="servicesBadge" class="py-1 border-y border-[#E1B168] text-[#fff] JosefinSans">WHAT WE OFFER</span>
+                    <h4 data-i18n="servicesTitle" class="text-[40px] gap-3 py-4 text-[#fff] CormorantInfant">Our Great Services</h4>
+                    <p data-i18n="servicesDes" class="text-[20px] JosefinSans text-[#fff] max-w-[75%]">The atmosphere set the stage. It’s about more than just a dining room away from your home. food takes the spotlight as guests.</p>
                 </div>
                 <div class="flex gap-[30px]">
                     <div class="w-[274px] h-[225px] border-[20px] border-[#323841] flex flex-col items-center justify-center">
                         <img src="./assets/service1.png" alt="Icon">
-                        <span class="text-[25px] text-[#fff] CormorantInfant">Opened 24/7</span>
+                        <span data-i18n="serviceOpened" class="text-[25px] text-[#fff] text-center CormorantInfant">Opened 24/7</span>
                     </div>
                     <div class="w-[274px] h-[225px] border-[20px] border-[#323841] flex flex-col items-center justify-center">
                         <img src="./assets/service2.png" alt="Icon">
-                        <span class="text-[25px] text-[#fff] CormorantInfant">Special Menus</span>
+                        <span data-i18n="serviceSpecial" class="text-[25px] text-[#fff] text-center CormorantInfant">Special Menus</span>
                     </div>
                     <div class="w-[274px] h-[225px] border-[20px] border-[#323841] flex flex-col items-center justify-center">
                         <img src="./assets/service3.png" alt="Icon">
-                        <span class="text-[25px] text-[#fff] CormorantInfant">Home Delivery</span>
+                        <span data-i18n="serviceDelivery" class="text-[25px] text-[#fff] text-center CormorantInfant">Home Delivery</span>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section id="about" class="bg-white py-[140px]">
+            <div class="w-full flex flex-col items-center justify-center">
+                <span class="border-y border-[#e1b168] text-[15px] text-[#292E36] JosefinSans">BLOG</span>
+                <h4 class="CormorantInfant text-[40px] text-[#292E36] py-3">Be First Who Read News</h4>
+                <p class="text-[20px] JosefinSans text-[#555]">Explore the latest stories about our dishes, offers,</p>
+                <p class="text-[20px] JosefinSans text-[#555]">events and future plans here.</p>
+            </div>
+                <div class="container flex justify-between gap-[50px] pt-10">
+
+                    <div class="w-full border border-[#999]">
+                        <div class="card1 w-full relative">
+                            <img class="w-full h-full" src="./assets/blog1.jpg" alt="Delicious">
+                            <div class="flex items-center justify-center overcard1 absolute inset-0 top-0 left-0 bg-[#0008]">
+                                <a href="#"><button class="w-57 h-[74px] duration-200 bg-[#e1b168] text-[22px] text-black JosefinSans border-2 border-[#e1b168] hover:bg-transparent hover:text-[#e1b168]">View More</button></a>
+                            </div>
+                        </div>
+                        <div class="p-10">
+                            <div>
+                                <span class="border-y border-[#d1b168] text-[#292E36] text-[15px] JosefinSans py-1">DELICIOUS</span>
+                                <span class="border-y border-[#d1b168] text-[#292E36] text-[15px] JosefinSans py-1">MARCH 19, 2022</span>
+                            </div>
+                            <h5 class="text-[30px] py-6 text-[#292E36] CormorantInfant">The Legend of US Cuisine: The Story of Hungry People</h5>
+                            <p class="text-[20px] text-[#555] JosefinSans max-w-[96%]">Capitalize on low-hanging fruit to identify a ballpark value added matrix economically and the creative activity to beta test override the food quality.</p>
+                        </div>
+                    </div>
+
+                        <div class="w-full border border-[#999]">
+                            <div class="w-full relative card1">
+                                <img class="w-full h-full" src="./assets/blog2.jpg" alt="Delicious">
+                                <div class="flex items-center justify-center overcard1 absolute inset-0 top-0 left-0 bg-[#0008]">
+                                    <a href="#"><button class="w-57 h-[74px] duration-200 bg-[#e1b168] text-[22px] text-black JosefinSans border-2 border-[#e1b168] hover:bg-transparent hover:text-[#e1b168]">View More</button></a>
+                                </div>
+                            </div>
+                            <div class="p-10">
+                                <div>
+                                    <span class="border-y border-[#d1b168] text-[#292E36] text-[15px] JosefinSans py-1">COOKING</span>
+                                    <span class="border-y border-[#d1b168] text-[#292E36] text-[15px] JosefinSans py-1">MARCH 19, 2022</span>
+                                </div>
+                                <h5 class="text-[30px] py-6 text-[#292E36] CormorantInfant">The Most Popular Delicious Food of Mediterranean Cuisine</h5>
+                                <p class="text-[20px] text-[#555] JosefinSans max-w-[96%]">Strategies on low-hanging fruit to identify a ballpark value added matrix economically and the creative activity to beta test override the food quality.</p>
+                            </div>
+                        </div>
+            </div>
+        </section>
+
+        <section class="reservation flex items-center justify-center py-[140px]">
+            <div class="p-[140px] bg-[#292E36F2] flex flex-col items-center justify-center gap-5">
+                <span class="border-y border-[#e1b168] text-[15px] py-1 text-white JosefinSans">RESERVATION</span>
+                <h3 class="text-[40px] text-white CormorantInfant">Book Your Table</h3>
+                <form class="w-[640px] flex flex-col items-center gap-5">
+                    <div class="w-full flex gap-5">
+                        <input class="w-full h-18 pl-6 bg-transparent border border-[#999] text-white text-[22px] placeholder:text-white JosefinSans placeholder:text-[22px] outline-hidden focus:border-blue-400" type="text" placeholder="Name">
+                        <input class="w-full h-18 pl-6 bg-transparent border border-[#999] text-white text-[22px] placeholder:text-white JosefinSans placeholder:text-[22px] outline-hidden focus:border-blue-400" type="text" placeholder="Email">
+                    </div>
+                    <div class="w-full flex gap-5">
+                        <input class="w-full h-18 pl-6 bg-transparent border border-[#999] text-white text-[22px] placeholder:text-white JosefinSans placeholder:text-[22px] outline-hidden focus:border-blue-400" type="text" placeholder="Persons">
+                        <input class="w-full h-18 pl-6 bg-transparent border border-[#999] text-white text-[22px] placeholder:text-white JosefinSans placeholder:text-[22px] outline-hidden focus:border-blue-400" type="number" placeholder="Timing">
+                        <input class="w-full h-18 pl-6 bg-transparent border border-[#999] text-white text-[22px] placeholder:text-white JosefinSans placeholder:text-[22px] outline-hidden focus:border-blue-400" type="number" placeholder="Date">
+                    </div>
+                    <button class="w-60 h-17 bg-white JosefinSans text-black text-[22px] duration-200 hover:bg-[#e1b168] hover:text-white">Book A Table</button>
+                </form>
+            </div>
+        </section>
+
+        <footer class="bg-[#292E36] pt-32">
+            <div class="container flex flex-col gap-4">
+                <div class="flex justify-between items-center">
+                    <a class="text-[22px] text-white JosefinSans" href="#">#TheTastEat</a>
+                    <div class="flex flex-col items-center">
+                        <a href="#"><img src="./assets/IMAGE.png" alt="Logo"></a>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="#"><img src="./assets/insta.svg" alt=""></a>
+                        <a href="#"><img src="./assets/facebook.svg" alt=""></a>
+                        <a href="#"><img src="./assets/twitter.svg" alt=""></a>
+                        <a href="#"><img src="./assets/pinterest.svg" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="flex justify-between">
+                    <div class="flex flex-col">
+                        <span class="border-y py-1 border-[#e1b168] text-white text-[15px] JosefinSans w-20 flex items-center justify-center">CONTACT</span>
+                        <p class="text-[20px] mt-8 text-white JosefinSans">5 Rue Dalou, 75015 Paris</p>
+                        <span class="text-[19px] text-[#e1b168] JosefinSans">+123 456 789</span>
+                        <span class="text-[19px] text-[#e1b168] JosefinSans">josefin@mail.com</span>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <p class="text-[20px] text-white JosefinSans mt-2">Join our mailing list for updates,</p>
+                        <p class="text-[20px] text-white JosefinSans">Get news & offers events.</p>
+                        <div class="flex items-center mt-4">
+                            <input class="w-104 h-17 border pl-6 border-[#999] text-white text-[22px] JosefinSans placeholder:text-white placeholder:text-[22px] outline-hidden focus:border-blue-400" type="text" placeholder="Email">
+                            <button class="w-52 h-17 text-[22px] text-black bg-white JosefinSans duration-200 hover:text-white hover:bg-[#e1b168]">Subscribe</button>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-end">
+                        <span class="border-y py-1 border-[#e1b168] text-white text-[15px] JosefinSans">WORKING HOURS</span>
+                        <li class="text-[20px] mt-8 text-white JosefinSans"><span class="text-[19px] text-[#e1b168] JosefinSans">Mon – Fri:</span>7.00am – 6.00pm</li>
+                        <li class="text-[20px] text-white JosefinSans"><span class="text-[19px] text-[#e1b168] JosefinSans">Sat:</span>7.00am – 6.00pm</li>
+                        <li class="text-[20px] text-white JosefinSans"><span class="text-[19px] text-[#e1b168] JosefinSans">Sun:</span>8.00am – 6.00pm</li>
+                    </div>
+                </div>
+
+            </div>
+            <div class="border-t border-[#999] py-6 mt-18">
+                <div class="container flex justify-between">
+                    <div class="text-[20px] text-white JosefinSans">
+                        © Copyright - TastEat | Designed by <span class="text-[#e1b168]">VictorFlow</span> - Powered by <span class="text-[#e1b168]">Webflow</span>
+                    </div>
+                    <div class="flex gap-5 text-[20px] text-[#e1b168] JosefinSans">
+                        <a href="#">Styleguide</a>
+                        <a href="#">Licenses</a>
+                        <a href="#">Protected</a>
+                        <a href="#">Not Found</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </div>
     <script src="./utils/global.js"></script>

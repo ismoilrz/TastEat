@@ -83,30 +83,30 @@ const PopularDishes = [
     {
         id: 1,
         src: "../assets/popular1.jpg",
-        title: "Chicken Manjoori",
+        titleKey: "dish1Title",
         price: "$15",
-        des: "Dish relished by all age groups as a starter dish at parties.",
+        desKey: "dish1Des",
     },
     {
         id: 2,
         src: "../assets/popular2.jpg",
-        title: "Hotdog",
+        titleKey: "dish2Title",
         price: "$10",
-        des: "Grilled sausage served in the slit of a partially sliced bun.",
+        desKey: "dish2Des",
     },
     {
         id: 3,
         src: "../assets/popular3.jpg",
-        title: "Fresh Salmon",
+        titleKey: "dish3Title",
         price: "$5",
-        des: "Beat the health blues with our Super Immune Blue Juice Recipe.",
+        desKey: "dish3Des",
     },
     {
         id: 4,
         src: "../assets/popular4.jpg",
-        title: "Veg Burger",
+        titleKey: "dish4Title",
         price: "$10",
-        des: "Burgers may be made from ingredients like beans.",
+        desKey: "dish4Des",
     },
 ]
 
@@ -115,12 +115,12 @@ const popularDishes = document.getElementById('popularDishes');
 popularDishes.innerHTML = PopularDishes.map((item) => (
     `
         <div class="w-1/4" key="${item.id}">
-            <img class="w-full" src="${item.src}" alt="${item.title}" />
-            <div class="flex justify-between border-b borer-[#DCDCDC] py-[10px]">
-                <h4 class="text-[30px] text-[#292E36] CormorantInfant font-bold">${item.title}</h4>
+            <img class="w-full" src="${item.src}" alt="" />
+            <div class="flex justify-between border-b border-[#DCDCDC] py-[10px]">
+                <h4 data-i18n="${item.titleKey}" class="text-[30px] text-[#292E36] CormorantInfant font-bold"></h4>
                 <b class="text-[30px] text-[#292E36] CormorantInfant font-bold">${item.price}</b>
             </div>
-            <p class="text-[20px] text-[#555] JosefinSans pt-[15px]">${item.des}</p>
+            <p data-i18n="${item.desKey}" class="text-[20px] text-[#555] JosefinSans pt-[15px]"></p>
         </div>
     `
-)).join("")
+)).join("");

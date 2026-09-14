@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+/* ////////////////////////////////  Roots Normalize ///////////////////////////////// */
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -28,6 +34,19 @@ body {
     background-color: #e1b168;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox uchun */
+} 
+
+button{
+    cursor: pointer;
+}
+
 .CormorantInfant {
     font-family: 'Cormorant Infant';
 }
@@ -35,6 +54,8 @@ body {
 .JosefinSans {
     font-family: 'Josefin Sans';
 }
+
+/* /////////////////////////////////////////////////////////////////////////////////////// */
 
 .swiper {
     width: 100%;
@@ -84,4 +105,22 @@ body {
 
 .offer2 {
     background-image: url("./assets/offers2.jpg");
+}
+
+.reservation {
+    background-image: url("./assets/eservation.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.overcard1 {
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease-out;
+}
+
+.card1:hover .overcard1 {
+    opacity: 1;
+    visibility: visible;
 }
