@@ -124,3 +124,7 @@ body {
     opacity: 1;
     visibility: visible;
 }
+
+#navbar a.active {
+    color: #e1b168 !important;
+}

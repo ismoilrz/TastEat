@@ -276,6 +276,9 @@
   .table {
     display: table;
   }
+  .h-14 {
+    height: calc(var(--spacing) * 14);
+  }
   .h-17 {
     height: calc(var(--spacing) * 17);
   }
@@ -327,8 +330,8 @@
   .w-20 {
     width: calc(var(--spacing) * 20);
   }
-  .w-28 {
-    width: calc(var(--spacing) * 28);
+  .w-24 {
+    width: calc(var(--spacing) * 24);
   }
   .w-30 {
     width: calc(var(--spacing) * 30);
@@ -392,6 +395,9 @@
   }
   .w-full {
     width: 100%;
+  }
+  .max-w-\[55\%\] {
+    max-width: 55%;
   }
   .max-w-\[75\%\] {
     max-width: 75%;
@@ -461,6 +467,9 @@
   }
   .gap-7 {
     gap: calc(var(--spacing) * 7);
+  }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
   }
   .gap-11 {
     gap: calc(var(--spacing) * 11);
@@ -580,17 +589,8 @@
   .bg-\[\#FFF8F5\] {
     background-color: #FFF8F5;
   }
-  .bg-\[\#e1\] {
-    background-color: #e1;
-  }
-  .bg-\[\#e1b1\] {
-    background-color: #e1b1;
-  }
   .bg-\[\#e1b168\] {
     background-color: #e1b168;
-  }
-  .bg-\[\#e1b\] {
-    background-color: #e1b;
   }
   .bg-\[\#fff8f5\] {
     background-color: #fff8f5;
@@ -760,9 +760,6 @@
   .text-\[\#fff\] {
     color: #fff;
   }
-  .text-\[-\] {
-    color: -;
-  }
   .text-black {
     color: var(--color-black);
   }
@@ -832,6 +829,59 @@
   }
   .focus\:border-blue-400:focus {
     border-color: var(--color-blue-400);
+  }
+  @media (width < 80rem) {
+    .max-xl\:h-14 {
+      height: calc(var(--spacing) * 14);
+    }
+    .max-xl\:w-5 {
+      width: calc(var(--spacing) * 5);
+    }
+    .max-xl\:w-60 {
+      width: calc(var(--spacing) * 60);
+    }
+    .max-xl\:w-64 {
+      width: calc(var(--spacing) * 64);
+    }
+    .max-xl\:w-65 {
+      width: calc(var(--spacing) * 65);
+    }
+    .max-xl\:w-70 {
+      width: calc(var(--spacing) * 70);
+    }
+    .max-xl\:w-\[600px\] {
+      width: 600px;
+    }
+    .max-xl\:w-full {
+      width: 100%;
+    }
+    .max-xl\:max-w-\[40\%\] {
+      max-width: 40%;
+    }
+    .max-xl\:flex-col {
+      flex-direction: column;
+    }
+    .max-xl\:items-center {
+      align-items: center;
+    }
+    .max-xl\:justify-center {
+      justify-content: center;
+    }
+    .max-xl\:gap-10 {
+      gap: calc(var(--spacing) * 10);
+    }
+    .max-xl\:px-\[5\%\] {
+      padding-inline: 5%;
+    }
+    .max-xl\:text-center {
+      text-align: center;
+    }
+    .max-xl\:text-\[18px\] {
+      font-size: 18px;
+    }
+    .max-xl\:text-\[80px\] {
+      font-size: 80px;
+    }
   }
 }
 html {
@@ -931,6 +981,9 @@ body {
 .card1:hover .overcard1 {
   opacity: 1;
   visibility: visible;
+}
+#navbar a.active {
+  color: #e1b168 !important;
 }
 @property --tw-rotate-x {
   syntax: "*";
