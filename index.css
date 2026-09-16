@@ -13,7 +13,7 @@ body {
 .container {
     width: 100%;
     max-width: 1440px;
-    margin: 0 auto;
+    margin-inline: auto;
 }
 
 ::-webkit-scrollbar {
@@ -45,6 +45,10 @@ input[type="number"] {
 
 button{
     cursor: pointer;
+}
+
+li {
+    list-style: none;
 }
 
 .CormorantInfant {
@@ -90,13 +94,13 @@ button{
     background-color: #fff !important;
 }
 
-body {
+.attach {
     background-image: url("./assets/wrapback.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50%;
+    /* background-position: 50%; */
     background-attachment: fixed;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .offer1 {

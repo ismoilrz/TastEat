@@ -30,7 +30,7 @@ function renderList(items, currentLang) {
                 <h4 class="CormorantInfant text-[#292E36] text-[30px]">${item.title[currentLang]}</h4>
                 <p class="text-[20px] text-[#555] JosefinSans">${item.des[currentLang]}</p>
             </div>
-            <div class="flex-1 border-b-2 border-[#AAAAAA] h-[70px] mb-2"></div>
+            <div class="flex-1 border-b-2 border-dashed border-[#AAAAAA] h-[70px] mb-2"></div>
             <h3 class="text-[30px] text-[#292E36] CormorantInfant shrink-0">${item.price}</h3>
         </div>
     `).join("");
@@ -105,7 +105,7 @@ const PopularDishes = [
 const popularDishesContainer = document.getElementById('popularDishes');
 if (popularDishesContainer) {
     popularDishesContainer.innerHTML = PopularDishes.map((item) => `
-        <div class="w-1/4" key="${item.id}">
+        <div class="w-1/4 max-xl:w-[30%]" key="${item.id}">
             <img class="w-full" src="${item.src}" alt="" />
             <div class="flex justify-between border-b border-[#DCDCDC] py-[10px]">
                 <h4 data-i18n="${item.titleKey}" class="text-[30px] text-[#292E36] CormorantInfant font-bold"></h4>
