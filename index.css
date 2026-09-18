@@ -16,6 +16,12 @@ body {
     margin-inline: auto;
 }
 
+main {
+    overflow-x: hidden;
+}
+
+
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -131,4 +137,30 @@ li {
 
 #navbar a.active {
     color: #e1b168 !important;
+}
+
+#drawer.active {
+    top: 0;
+}
+
+#drawerBtn.active {
+    background-color: #e1b168;
+}
+
+#drawerBtn.active span{
+    background-color: #fff;
+}
+
+#drawerBtn.active span:nth-child(2) {
+    display: none;
+}
+#drawerBtn.active span:nth-child(1) {
+    margin-left: 4px;
+    margin-top: 4px;
+    transform: rotate(45deg);
+}
+#drawerBtn.active span:nth-child(3) {
+    margin-left: 4px;
+    margin-top: -6px;
+    transform: rotate(-45deg);
 }

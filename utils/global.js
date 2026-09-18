@@ -24,7 +24,7 @@ document.addEventListener("click", () => {
 function renderList(items, currentLang) {
     if (!items) return "";
     return items.map((item) => `
-        <div data-aos="fade-left" class="flex items-center justify-between gap-4" data-id="${item.id}">
+        <div data-aos="fade-up" class="flex items-center justify-between gap-4 max-sm:flex-col items-start" data-id="${item.id}">
             <img src="${item.img}" alt="" />
             <div class="flex flex-col gap-1 shrink-0">
                 <h4 class="CormorantInfant text-[#292E36] text-[30px]">${item.title[currentLang]}</h4>
@@ -103,9 +103,10 @@ const PopularDishes = [
 ];
 
 const popularDishesContainer = document.getElementById('popularDishes');
+
 if (popularDishesContainer) {
     popularDishesContainer.innerHTML = PopularDishes.map((item) => `
-        <div class="w-1/4 max-xl:w-[30%]" key="${item.id}">
+        <div class="w-1/4 max-xl:w-[30%] max-lg:w-full max-lg:mt-10" key="${item.id}">
             <img class="w-full" src="${item.src}" alt="" />
             <div class="flex justify-between border-b border-[#DCDCDC] py-[10px]">
                 <h4 data-i18n="${item.titleKey}" class="text-[30px] text-[#292E36] CormorantInfant font-bold"></h4>
@@ -162,3 +163,11 @@ function setDefaultActive() {
 }
 
 window.addEventListener('DOMContentLoaded', setDefaultActive);
+
+const menuBtn = document.getElementById('drawerBtn');
+const drawer = document.getElementById('drawer');
+
+menuBtn.addEventListener('click', () => {
+    drawer.classList.toggle('active')
+    menuBtn.classList.toggle('active')
+})
