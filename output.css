@@ -991,6 +991,24 @@
     .max-xl\:w-full {
       width: 100%;
     }
+    .max-xl\:max-w-\[30\%\] {
+      max-width: 30%;
+    }
+    .max-xl\:max-w-\[30\] {
+      max-width: 30;
+    }
+    .max-xl\:max-w-\[40\%\] {
+      max-width: 40%;
+    }
+    .max-xl\:max-w-\[50\%\] {
+      max-width: 50%;
+    }
+    .max-xl\:max-w-\[60\%\] {
+      max-width: 60%;
+    }
+    .max-xl\:max-w-\[200px\] {
+      max-width: 200px;
+    }
     .max-xl\:max-w-full {
       max-width: 100%;
     }
@@ -1155,6 +1173,9 @@
     }
     .max-sm\:w-\[70\%\] {
       width: 70%;
+    }
+    .max-sm\:max-w-full {
+      max-width: 100%;
     }
     .max-sm\:flex-col {
       flex-direction: column;
