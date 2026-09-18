@@ -1171,6 +1171,9 @@
     .max-sm\:py-10 {
       padding-block: calc(var(--spacing) * 10);
     }
+    .max-sm\:text-center {
+      text-align: center;
+    }
     .max-sm\:text-\[18px\] {
       font-size: 18px;
     }
